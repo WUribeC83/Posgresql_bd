@@ -1,4 +1,4 @@
-# 📊 Base de Datos para Asignación de Citas Médicas - Posgresql
+# 📊 Base de Datos para Asignación de Citas Médicas - PosgreSql
 
 ## Descripción
 Esta base de datos está diseñada para instituciones de salud, con el objetivo de controlar la asignación de citas médicas. Actualmente, los datos están dirigidos a la asignación de citas de medicina para la salud visual.
@@ -23,11 +23,17 @@ La base de datos incluye **algunas vistas** que resumen el contenido, para facil
 A continuación te muestro algunas imágenes de la base de datos:
 
 ## Diagrama Entidad-Relación
+
 ![Portada](img/ERD_BD.png)
 
 ## Resultados de las Vistas
-!Resultados de las Vistas 1
-!Resultados de las Vistas 2
+1. **Vista de citas**:
+   
+![Img1](img/VISTA1.png)
+
+2. **Vista de ranking de profesionales**:
+   
+![Img2](img/VISTA2.png)
 
 ## Uso
 Para utilizar esta base de datos, sigue los siguientes pasos:

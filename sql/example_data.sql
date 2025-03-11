@@ -5,7 +5,7 @@
 -- Dumped from database version 16.8
 -- Dumped by pg_dump version 17.2
 
--- Started on 2025-03-08 18:07:36
+-- Started on 2025-03-10 20:33:35
 
 SET statement_timeout = 0;
 SET lock_timeout = 0;
@@ -20,7 +20,7 @@ SET client_min_messages = warning;
 SET row_security = off;
 
 --
--- TOC entry 3622 (class 0 OID 1654785)
+-- TOC entry 3623 (class 0 OID 1654785)
 -- Dependencies: 258
 -- Data for Name: consultorios; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -39,7 +39,7 @@ INSERT INTO "William Uribe".consultorios (id, nombre_consultorio) VALUES (11, 'S
 
 
 --
--- TOC entry 3616 (class 0 OID 1630342)
+-- TOC entry 3617 (class 0 OID 1630342)
 -- Dependencies: 226
 -- Data for Name: convenios; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -76,7 +76,7 @@ INSERT INTO "William Uribe".convenios (id, nom_convenio) VALUES (29, 'MAGISTERIO
 
 
 --
--- TOC entry 3612 (class 0 OID 1630274)
+-- TOC entry 3613 (class 0 OID 1630274)
 -- Dependencies: 222
 -- Data for Name: departamentos; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -118,7 +118,7 @@ INSERT INTO "William Uribe".departamentos (id, nom_dpto) VALUES (34, 'EXTRANJERO
 
 
 --
--- TOC entry 3626 (class 0 OID 1736705)
+-- TOC entry 3627 (class 0 OID 1736705)
 -- Dependencies: 288
 -- Data for Name: est_cita; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -131,7 +131,7 @@ INSERT INTO "William Uribe".est_cita (id, estado) VALUES (5, 'EN ATENCION');
 
 
 --
--- TOC entry 3614 (class 0 OID 1630335)
+-- TOC entry 3615 (class 0 OID 1630335)
 -- Dependencies: 224
 -- Data for Name: municipios; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -1259,8 +1259,8 @@ INSERT INTO "William Uribe".municipios (id, departamentos_id, nom_municip) VALUE
 
 
 --
--- TOC entry 3632 (class 0 OID 1769500)
--- Dependencies: 303
+-- TOC entry 3633 (class 0 OID 1769500)
+-- Dependencies: 295
 -- Data for Name: tipo_doc; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
 
@@ -1274,8 +1274,8 @@ INSERT INTO "William Uribe".tipo_doc (id, tipo_doc) VALUES (8, 'NV');
 
 
 --
--- TOC entry 3633 (class 0 OID 1769534)
--- Dependencies: 304
+-- TOC entry 3634 (class 0 OID 1769534)
+-- Dependencies: 296
 -- Data for Name: pacientes; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
 
@@ -1570,8 +1570,8 @@ INSERT INTO "William Uribe".pacientes (id, tipo_doc_id, nro_doc, nombre_completo
 
 
 --
--- TOC entry 3630 (class 0 OID 1769481)
--- Dependencies: 300
+-- TOC entry 3631 (class 0 OID 1769481)
+-- Dependencies: 292
 -- Data for Name: profesiones; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
 
@@ -1591,7 +1591,7 @@ INSERT INTO "William Uribe".profesiones (id, profesion) VALUES (13, 'OFTAL. PEDI
 
 
 --
--- TOC entry 3618 (class 0 OID 1630356)
+-- TOC entry 3619 (class 0 OID 1630356)
 -- Dependencies: 230
 -- Data for Name: profesionales; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -1666,7 +1666,7 @@ INSERT INTO "William Uribe".profesionales (id, nombre_prof, activo, profesiones_
 
 
 --
--- TOC entry 3620 (class 0 OID 1630419)
+-- TOC entry 3621 (class 0 OID 1630419)
 -- Dependencies: 240
 -- Data for Name: tipos_citas; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -1714,7 +1714,7 @@ INSERT INTO "William Uribe".tipos_citas (id, tipo_cita) VALUES (40, 'TERAPIA VIS
 
 
 --
--- TOC entry 3628 (class 0 OID 1753093)
+-- TOC entry 3629 (class 0 OID 1753093)
 -- Dependencies: 290
 -- Data for Name: usuarios; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -1774,7 +1774,7 @@ INSERT INTO "William Uribe".usuarios (id, nom_usr, "user") VALUES (52, 'LUCILA R
 
 
 --
--- TOC entry 3623 (class 0 OID 1654791)
+-- TOC entry 3624 (class 0 OID 1654791)
 -- Dependencies: 259
 -- Data for Name: citas; Type: TABLE DATA; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2074,7 +2074,7 @@ INSERT INTO "William Uribe".citas (id, pacientes_id, convenios_id, consultorios_
 
 
 --
--- TOC entry 3640 (class 0 OID 0)
+-- TOC entry 3641 (class 0 OID 0)
 -- Dependencies: 260
 -- Name: citas_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2083,7 +2083,7 @@ SELECT pg_catalog.setval('"William Uribe".citas_id_seq', 292, true);
 
 
 --
--- TOC entry 3641 (class 0 OID 0)
+-- TOC entry 3642 (class 0 OID 0)
 -- Dependencies: 257
 -- Name: consultorios_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2092,7 +2092,7 @@ SELECT pg_catalog.setval('"William Uribe".consultorios_id_seq', 11, true);
 
 
 --
--- TOC entry 3642 (class 0 OID 0)
+-- TOC entry 3643 (class 0 OID 0)
 -- Dependencies: 225
 -- Name: convenios_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2101,7 +2101,7 @@ SELECT pg_catalog.setval('"William Uribe".convenios_id_seq', 29, true);
 
 
 --
--- TOC entry 3643 (class 0 OID 0)
+-- TOC entry 3644 (class 0 OID 0)
 -- Dependencies: 221
 -- Name: departamento_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2110,7 +2110,7 @@ SELECT pg_catalog.setval('"William Uribe".departamento_id_seq', 34, true);
 
 
 --
--- TOC entry 3644 (class 0 OID 0)
+-- TOC entry 3645 (class 0 OID 0)
 -- Dependencies: 239
 -- Name: especialidades_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2119,7 +2119,7 @@ SELECT pg_catalog.setval('"William Uribe".especialidades_id_seq', 40, true);
 
 
 --
--- TOC entry 3645 (class 0 OID 0)
+-- TOC entry 3646 (class 0 OID 0)
 -- Dependencies: 287
 -- Name: est_cita_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2128,7 +2128,7 @@ SELECT pg_catalog.setval('"William Uribe".est_cita_id_seq', 5, true);
 
 
 --
--- TOC entry 3646 (class 0 OID 0)
+-- TOC entry 3647 (class 0 OID 0)
 -- Dependencies: 223
 -- Name: municipios_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2137,8 +2137,8 @@ SELECT pg_catalog.setval('"William Uribe".municipios_id_seq', 1120, true);
 
 
 --
--- TOC entry 3647 (class 0 OID 0)
--- Dependencies: 305
+-- TOC entry 3648 (class 0 OID 0)
+-- Dependencies: 297
 -- Name: pacientes_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
 
@@ -2146,7 +2146,7 @@ SELECT pg_catalog.setval('"William Uribe".pacientes_id_seq', 288, true);
 
 
 --
--- TOC entry 3648 (class 0 OID 0)
+-- TOC entry 3649 (class 0 OID 0)
 -- Dependencies: 229
 -- Name: profesionales_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2155,8 +2155,8 @@ SELECT pg_catalog.setval('"William Uribe".profesionales_id_seq', 67, true);
 
 
 --
--- TOC entry 3649 (class 0 OID 0)
--- Dependencies: 299
+-- TOC entry 3650 (class 0 OID 0)
+-- Dependencies: 291
 -- Name: profesiones_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
 
@@ -2164,8 +2164,8 @@ SELECT pg_catalog.setval('"William Uribe".profesiones_id_seq', 13, true);
 
 
 --
--- TOC entry 3650 (class 0 OID 0)
--- Dependencies: 302
+-- TOC entry 3651 (class 0 OID 0)
+-- Dependencies: 294
 -- Name: tipo_doc_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
 
@@ -2173,7 +2173,7 @@ SELECT pg_catalog.setval('"William Uribe".tipo_doc_id_seq', 8, true);
 
 
 --
--- TOC entry 3651 (class 0 OID 0)
+-- TOC entry 3652 (class 0 OID 0)
 -- Dependencies: 289
 -- Name: usuarios_id_seq; Type: SEQUENCE SET; Schema: William Uribe; Owner: Comfe_owner
 --
@@ -2181,7 +2181,7 @@ SELECT pg_catalog.setval('"William Uribe".tipo_doc_id_seq', 8, true);
 SELECT pg_catalog.setval('"William Uribe".usuarios_id_seq', 52, true);
 
 
--- Completed on 2025-03-08 18:07:52
+-- Completed on 2025-03-10 20:33:51
 
 --
 -- PostgreSQL database dump complete
